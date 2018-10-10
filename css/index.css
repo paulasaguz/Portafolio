@@ -1,0 +1,453 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?29jsxl');
+  src:  url('../fonts/icomoon.eot?29jsxl#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?29jsxl') format('truetype'),
+    url('../fonts/icomoon.woff?29jsxl') format('woff'),
+    url('../fonts/icomoon.svg?29jsxl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+  content: "\e900";
+}
+.icon-mobile:before {
+  content: "\e901";
+}
+.icon-linkedin:before {
+  content: "\e902";
+}
+.icon-instagram:before {
+  content: "\e903";
+}
+.icon-github:before {
+  content: "\e904";
+}
+.icon-facebook:before {
+  content: "\e905";
+}
+body {
+  margin:0;
+}
+.contenedor {
+  max-width:1000px;
+  margin:0 auto;
+}
+.navigate {
+  display: flex;
+  justify-content: space-between;
+}
+.principal {
+  letter-spacing: 1px;
+}
+.navigate-left {
+  height: 50px;
+  font-family: 'Comfortaa', cursive;
+  display: flex;
+}
+.navigate-right {
+  display: flex;
+  height: 50px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  list-style: none;
+  justify-content: space-around;
+}
+.navigate-left li {
+  display: flex;
+  padding-left: 10px;
+}
+.navigate-left a {
+  display: flex;
+  text-decoration: none;
+  color:inherit;
+  align-items: flex-end;
+  text-transform: uppercase;
+  vertical-align: center;
+}
+.navigate-right li {
+  display: flex;
+  padding-right: 15px;
+}
+.navigate-right a {
+  display: flex;
+  text-decoration: none;
+  color:inherit;
+  align-items: flex-end;
+  text-transform: uppercase;
+}
+.background {
+  height: 60vh;
+  text-align: left;
+  margin-top: 180px;
+  font-family: 'Prompt', sans-serif;
+}
+.background h1 {
+  color:black;
+  font-size:40px;
+  font-weight: bold;
+}
+.background span {
+  color: #442EF3;
+}
+.background h3 {
+  color: #5b3893;
+  font-weight: bold;
+  font-size: 16px;
+}
+.acerca-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.acerca-de-mi {
+  font-family: 'Comfortaa', cursive;
+}
+.algunos-numeros {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  color: #5b3893;
+  border-bottom: 4px solid #5b3893;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.numeros-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  font-family: 'Raleway',sans-serif;
+}
+.numeros-container li{
+  list-style: none;
+  text-align: center;
+}
+.numero {
+  font-size: 45px;
+}
+.love-images {
+  width: 50px;
+  height:50px;
+}
+.acerca-de-mi {
+  display: flex;
+  justify-content: center;
+}
+.about {
+  max-width: 800px;
+  text-align: center;
+  padding: 20px 0 60px 0;
+}
+.about h1 {
+  font-size:30px;
+  font-family: 'Prompt', serif;
+  text-transform: uppercase;
+}
+.about p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+.eventos-list {
+  display: flex;
+  overflow: auto;
+  padding: 25px 0;
+  margin-bottom: 20px;
+}
+.eventos-item img{
+  border-radius: 8px 8px 0 0 ;
+}
+.eventos-item {
+  margin-right: 15px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  border: 1px solid #c6c1cc;
+}
+.global-title h2 {
+  justify-content: center;
+  display: flex;
+}
+.global-volunteer {
+  display: flex;
+  padding: 20px 0;
+  width: 100%;
+  height: 300px;
+  font-family: 'Raleway', cursive;
+  color: white;
+}
+.volunteer-container-es {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+  url('../images/vitoria-background.jpg');
+  background-size: cover;
+}
+.volunteer-container-rj {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+  url('../images/rio-background.jpg');
+  background-size: cover;
+}
+.volunteer-vitoria {
+  align-self: center;
+  font-family: inherit;
+  max-width: 400px;
+}
+.volunteer-rio {
+  align-self: center;
+  font-family: inherit;
+  max-width: 400px;
+}
+.carusel {
+  width: 100%;
+  height: 50vh;
+  display: none;
+}
+.carusel-list {
+  display: flex;
+  overflow: auto;
+  padding: 20px 0;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  cursor: pointer;
+}
+.skills {
+  background-color:#3991F6;
+  position: relative;
+}
+/*.skills:before {
+  content: "";
+  position: absolute;
+  border-bottom:70px solid red;
+  top:0;
+  bottom: 100%;
+  z-index: -1;
+  right: -10px;
+  left:0;
+  transform: rotate(-5deg);
+  overflow: hidden;
+}
+*/
+.skills-container {
+  display: flex;
+  height: 100vh;
+}
+.habilidades {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Prompt', cursive;
+}
+.habilidades-container {
+  align-self: center;
+  max-width: 400px;
+}
+.habilidades-container p {
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.8;
+  color: white;
+}
+.image-comunidad {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.cv {
+  padding: 50px 0 40px 0;
+}
+.float {
+  float: right;
+  margin-top: -57px;
+}
+.button-cv {
+  background-image:linear-gradient(to right, #5b3893 , #862ab7,#611da5, #5c2fef, #210dba);
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.canvasContainer {
+  width: 50%;
+}
+.habilidades h2 {
+  font-size:30px;
+  font-family: 'Prompt', cursive;
+  text-align: center;
+  color: white;
+}
+.habilidades span {
+  border-bottom: 4px solid #5b3893;
+  padding-bottom: 5px;
+}
+.projects-clones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.projects-clones h3 {
+  font-family: 'Comfortaa', serif;
+}
+.projects-list {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+.project-item {
+  align-self: center;
+  overflow: hidden;
+  position: relative;
+  width: 330px;
+  height: 250px;
+}
+.project-item img {
+  width: 100%;
+  height: 100%;
+}
+.project-item:hover .info {
+  display: block;
+}
+.info {
+  background:rgba(30, 29, 29,.9);
+  color: white;
+  font-family: 'Comfortaa', serif;
+  text-align: center;
+  align-items: center;
+  padding:50px 0;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  height:100%;
+  width: 100%;
+  display: none;
+}
+.info button {
+  padding: 10px 25px;
+  border: none;
+  background-color:#5b3893;
+  color: white;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.info-container {
+  top:50%;
+  vertical-align: middle;
+}
+.contacto {
+  height: 80vh;
+}
+.social-net {
+  max-width: 800px;
+  font-family:'Comfortaa', cursive;
+}
+.social-contact {
+  align-items: center;
+  align-self: center;
+  padding: 70px 30px;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 20px;
+}
+.social-contact h2{
+  font-size: 30px;
+}
+.redes-fixed {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 150px;
+}
+.redes-fixed a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 25px;
+  color: black;
+}
+.redes {
+  align-items: center;
+  padding: 15px 30px;
+  text-align: center;
+}
+.redes a {
+  text-decoration: none;
+  font-size: 25px;
+  padding-right: 20px;
+  text-align: center;
+}
+.eventos-contenedor h3 {
+  font-family: 'Raleway', serif;
+  font-size: 20px;
+  margin: 35px 0;
+}
+.sobrepuesto {
+  text-align: center;
+  font-family: 'Comfortaa',cursive;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+.sobrepuesto p {
+  color: grey;
+}
+.footer {
+  background-color:#0A0037;
+  text-align: center;
+  padding: 50px 0;
+}
+.footer-list li {
+  color: white;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 10px 15px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 19px;
+}
+.footer-list h3 {
+  padding: 10px 0;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  font-size:21px;
+}
+.footer-list .redes a {
+  color: white;
+}
