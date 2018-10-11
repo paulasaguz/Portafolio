@@ -258,7 +258,10 @@ body {
 */
 .skills-container {
   display: flex;
-  height: 100vh;
+  height: 650px;
+}
+.canvasContainer {
+  align-self: center;
 }
 .habilidades {
   width: 50%;
@@ -371,7 +374,7 @@ body {
   vertical-align: middle;
 }
 .contacto {
-  height: 80vh;
+  height: 500px;
 }
 .social-net {
   max-width: 800px;
@@ -394,12 +397,14 @@ body {
   position: fixed;
   right: 0;
   top: 150px;
+  background-color: #130363;
+  border-radius: 10px 0 0 10px;
 }
 .redes-fixed a {
   text-decoration: none;
-  padding: 10px;
-  font-size: 25px;
-  color: black;
+  padding: 20px 25px;
+  font-size: 30px;
+  color:white;
 }
 .redes {
   align-items: center;
