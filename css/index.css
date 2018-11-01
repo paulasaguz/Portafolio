@@ -52,6 +52,7 @@ body {
 .navigate {
   display: flex;
   justify-content: space-between;
+  height: 70px;
 }
 .principal {
   letter-spacing: 1px;
@@ -93,23 +94,38 @@ body {
   text-transform: uppercase;
 }
 .background {
-  height: 60vh;
+  height: 75vh;
+  background-image: url(../images/businesswomen1-istock.jpg);
+  background-size: cover;
   text-align: left;
-  margin-top: 180px;
+  padding: 50px 0;
   font-family: 'Prompt', sans-serif;
+}
+.background-info {
+  margin-top:100px;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.img-profile{
+  border-radius: 50%;
 }
 .background h1 {
   color:black;
   font-size:40px;
   font-weight: bold;
-}
-.background span {
-  color: #442EF3;
+  margin: 10px 0;
 }
 .background h3 {
   color: #5b3893;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
+}
+.clear {
+  color:#00814B;
 }
 .acerca-container {
   display: flex;
@@ -135,9 +151,15 @@ body {
   padding: 30px 0;
   font-family: 'Raleway',sans-serif;
 }
+.cinturon {
+  position: absolute;
+  margin:-15px -50px;
+}
 .numeros-container li{
   list-style: none;
+  line-height:1.5;
   text-align: center;
+  position: relative;
 }
 .numero {
   font-size: 45px;
@@ -363,8 +385,11 @@ body {
   padding: 10px 25px;
   border: none;
   background-color:#5b3893;
-  color: white;
   border-radius: 15px;
+}
+.info a {
+  color: white;
+  text-decoration: none;
   letter-spacing: 1px;
   font-weight: bold;
   text-transform: uppercase;
@@ -397,13 +422,13 @@ body {
   position: fixed;
   right: 0;
   top: 150px;
-  background-color: #130363;
+  background-color:rgba(49, 2, 124, .9);
   border-radius: 10px 0 0 10px;
 }
 .redes-fixed a {
   text-decoration: none;
-  padding: 20px 25px;
-  font-size: 30px;
+  padding: 12px 15px;
+  font-size: 25px;
   color:white;
 }
 .redes {
