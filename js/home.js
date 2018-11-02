@@ -1,5 +1,3 @@
-
-
 window.onload = function() {
     try {
       TagCanvas.Start('myCanvas','tags', options);
@@ -7,7 +5,7 @@ window.onload = function() {
       document.getElementById('myCanvasContainer').style.display = 'none';
     }
   };
- var options = {
+  var options = { 
     textColour : 'white',
     outlineThickness : 0.5,
     outlineColour : '#fe0853',
@@ -24,4 +22,12 @@ window.onload = function() {
     fadeIn:3000,
     initial: [0.3,-0.1],
     depth : 0.8
- };
+  }
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    document.getElementById("myCanvas").style.width = "300px";
+    document.getElementById("myCanvas").style.height = "300px";
+    }
+  else {
+    document.getElementById("myCanvas").style.width = "500px";
+    document.getElementById("myCanvas").style.height = "500px";
+  }
