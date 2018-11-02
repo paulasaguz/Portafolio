@@ -156,6 +156,8 @@ body {
 .cinturon {
   position: absolute;
   margin:-15px -50px;
+  width:100px;
+  height:30px;
 }
 .numeros-container li{
   list-style: none;
@@ -488,7 +490,6 @@ body {
   .contenedor {
     max-width:800px;
     margin:0 auto;
-    border:2px solid green;
   }
   .projects-list {
     justify-content: center;
@@ -528,7 +529,6 @@ body {
   .contenedor {
     max-width:750px;
     margin:0 auto;
-    border:2px solid blue;
   }
 }
 
@@ -536,7 +536,6 @@ body {
   .contenedor {
     max-width:600px;
     margin:0 auto;
-    border:2px solid red;
   }
   .navigate-left {
     font-size: 14px;
@@ -556,7 +555,18 @@ body {
   .volunteer-container-rj {
     width: 100%;
     padding: 5px;
-    
+  }
+  .footer-list li {
+    font-size: 17px;
+  }
+  .footer-list h3 {
+    line-height: 2;
+    font-size:20px;
+  }
+  .cinturon {
+    width: 80px;
+    height: 20px;
+    margin:-12px -38px;
   }
 }
 
@@ -564,7 +574,6 @@ body {
   .contenedor {
     max-width:400px;
     margin:0 auto;
-    border:2px solid red;
   }
   .navigate-left {
     font-size: 16px;
@@ -592,5 +601,28 @@ body {
   }
   .info-dev h3 {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contenedor {
+    max-width:350px;
+    margin:0 auto;
+  }
+  .navigate-left {
+    font-size: 16px;
+  }
+  .redes-fixed a {
+    font-size: 20px;
+  }
+  .img-profile{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+  }
+  .info-dev h1 {
+    font-size: 30px;
+  }
+  .info-dev h3 {
+    font-size: 16px;
   }
 }
