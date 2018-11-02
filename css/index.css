@@ -112,6 +112,8 @@ body {
 }
 .img-profile{
   border-radius: 50%;
+  width: 180px;
+  height: 180px;
 }
 .background h1 {
   color:black;
@@ -173,7 +175,6 @@ body {
   justify-content: center;
 }
 .about {
-  max-width: 800px;
   text-align: center;
   padding: 20px 0 60px 0;
 }
@@ -350,7 +351,7 @@ body {
 .projects-list {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 5px;
+  flex-wrap: wrap;
 }
 .project-item {
   align-self: center;
@@ -358,6 +359,7 @@ body {
   position: relative;
   width: 330px;
   height: 250px;
+  margin: 1px;
 }
 .project-item img {
   width: 100%;
@@ -480,4 +482,115 @@ body {
 }
 .footer-list .redes a {
   color: white;
+}
+
+@media screen and (max-width: 1050px) {
+  .contenedor {
+    max-width:800px;
+    margin:0 auto;
+    border:2px solid green;
+  }
+  .projects-list {
+    justify-content: center;
+  }
+  .project-item {
+    margin: 5px;
+  }
+  .volunteer-vitoria {
+    max-width: 300px;
+  }
+  .volunteer-rio {
+    max-width: 300px;
+  }
+  .skills-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .skills {
+    padding: 20px 0;
+  }
+  .habilidades {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .habilidades-container {
+    padding: 10px;
+    max-width: none;
+  }
+  .canvasContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contenedor {
+    max-width:750px;
+    margin:0 auto;
+    border:2px solid blue;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contenedor {
+    max-width:600px;
+    margin:0 auto;
+    border:2px solid red;
+  }
+  .navigate-left {
+    font-size: 14px;
+  }
+  .navigate-right {
+    font-size: 14px;
+  }
+  .global-volunteer {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+  }
+  .volunteer-container-es {
+    width: 100%;
+    padding: 5px;
+  }
+  .volunteer-container-rj {
+    width: 100%;
+    padding: 5px;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor {
+    max-width:400px;
+    margin:0 auto;
+    border:2px solid red;
+  }
+  .navigate-left {
+    font-size: 16px;
+  }
+  .navigate-right {
+    display: none;
+  }
+  .redes-fixed {
+    right: 0;
+    top: 120px;
+  }
+  .redes-fixed a {
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 22px;
+    color:white;
+  }
+  .img-profile{
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+  }
+  .info-dev h1 {
+    font-size: 35px;
+  }
+  .info-dev h3 {
+    font-size: 18px;
+  }
 }
