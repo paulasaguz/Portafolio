@@ -321,12 +321,16 @@ body {
 .button-cv {
   background-image:linear-gradient(to right, #5b3893 , #862ab7,#611da5, #5c2fef, #210dba);
   padding: 10px 15px;
+  color:white;
   border: none;
-  color: white;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 15px;
   border-radius: 5px;
+}
+.button-cv a{
+  color: white;
+  text-decoration: none;
 }
 .canvasContainer {
   width: 50%;
