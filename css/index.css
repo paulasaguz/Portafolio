@@ -471,12 +471,15 @@ body {
   padding: 50px 0;
 }
 .footer-list li {
-  color: white;
   letter-spacing: 2px;
   display: inline-block;
   padding: 10px 15px;
   font-family: 'Comfortaa', cursive;
   font-size: 19px;
+}
+.footer-list a {
+  color: white;
+  text-decoration: none;
 }
 .footer-list h3 {
   padding: 10px 0;
