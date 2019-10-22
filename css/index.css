@@ -94,37 +94,42 @@ body {
   text-transform: uppercase;
 }
 .background {
-  height: 75vh;
-  background-image: url(../images/businesswomen1-istock.jpg);
+  height: 50vh;
+  background-image: url(../images/background.jpg);
+  background-position: 2px;
   background-size: cover;
   text-align: left;
   padding: 50px 0;
   font-family: 'Prompt', sans-serif;
 }
 .background-info {
-  margin-top:100px;
+  margin-top: 10px;
   max-width: 700px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, .9);
+  border: 2px solid #5b3893;
   border-radius: 8px;
-  padding: 20px;
-  display: flex;
+  padding: 15px 20px;
+  display: inline-flex;
   justify-content: space-between;
 }
-.img-profile{
+
+.img-profile {
   border-radius: 50%;
-  width: 180px;
-  height: 180px;
+  margin-right: 20px;
+  width: 110px;
+  height: 110px;
 }
 .background h1 {
   color:black;
   font-size:40px;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 0;
 }
 .background h3 {
   color: #5b3893;
   font-weight: bold;
   font-size: 20px;
+  margin: 8px;
 }
 .clear {
   color:#00814B;
@@ -137,8 +142,9 @@ body {
 .acerca-de-mi {
   font-family: 'Comfortaa', cursive;
 }
-.algunos-numeros {
+.subtitle {
   font-family: 'Raleway', sans-serif;
+  font-size: 24px;
   letter-spacing: 1px;
   padding: 10px 0;
   color: #5b3893;
@@ -155,13 +161,13 @@ body {
 }
 .cinturon {
   position: absolute;
-  margin:-15px -50px;
-  width:100px;
-  height:30px;
+  margin: -15px -50px;
+  width: 100px;
+  height: 30px;
 }
 .numeros-container li{
   list-style: none;
-  line-height:1.5;
+  line-height: 1.5;
   text-align: center;
   position: relative;
 }
@@ -170,7 +176,7 @@ body {
 }
 .love-images {
   width: 50px;
-  height:50px;
+  height: 50px;
 }
 .acerca-de-mi {
   display: flex;
@@ -179,15 +185,16 @@ body {
 .about {
   text-align: center;
   padding: 20px 0 60px 0;
+  max-width: 650px;
 }
-.about h1 {
-  font-size:30px;
+.title {
+  font-size: 30px;
   font-family: 'Prompt', serif;
   text-transform: uppercase;
 }
 .about p {
   font-size: 15px;
-  line-height: 1.8;
+  line-height: 2.3;
 }
 .eventos-list {
   display: flex;
@@ -265,7 +272,7 @@ body {
   cursor: pointer;
 }
 .skills {
-  background-color:#3991F6;
+  background-color: #3991F6;
   position: relative;
 }
 /*.skills:before {
@@ -375,24 +382,24 @@ body {
   display: block;
 }
 .info {
-  background:rgba(30, 29, 29,.9);
+  background: rgba(30, 29, 29,.9);
   color: white;
   font-family: 'Comfortaa', serif;
   text-align: center;
   align-items: center;
-  padding:50px 0;
+  padding: 50px 0;
   position: absolute;
   z-index: 2;
   top: 0;
   bottom: 0;
-  height:100%;
+  height: 100%;
   width: 100%;
   display: none;
 }
 .info button {
   padding: 10px 25px;
   border: none;
-  background-color:#5b3893;
+  background-color: #5b3893;
   border-radius: 15px;
 }
 .info a {
@@ -403,7 +410,7 @@ body {
   text-transform: uppercase;
 }
 .info-container {
-  top:50%;
+  top: 50%;
   vertical-align: middle;
 }
 .contacto {
@@ -430,7 +437,7 @@ body {
   position: fixed;
   right: 0;
   top: 150px;
-  background-color:rgba(49, 2, 124, .9);
+  background-color: rgba(49, 2, 124, .9);
   border-radius: 10px 0 0 10px;
 }
 .redes-fixed a {
@@ -452,7 +459,6 @@ body {
 }
 .eventos-contenedor h3 {
   font-family: 'Raleway', serif;
-  font-size: 20px;
   margin: 35px 0;
 }
 .sobrepuesto {
@@ -466,7 +472,7 @@ body {
   color: grey;
 }
 .footer {
-  background-color:#0A0037;
+  background-color: #0A0037;
   text-align: center;
   padding: 50px 0;
 }
@@ -487,7 +493,7 @@ body {
   margin-bottom: 30px;
   color: white;
   font-family: 'Comfortaa', cursive;
-  font-size:21px;
+  font-size: 21px;
 }
 .footer-list .redes a {
   color: white;
@@ -534,15 +540,15 @@ body {
 
 @media screen and (max-width: 950px) {
   .contenedor {
-    max-width:750px;
-    margin:0 auto;
+    max-width: 750px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 800px) {
   .contenedor {
-    max-width:600px;
-    margin:0 auto;
+    max-width: 600px;
+    margin: 0 auto;
   }
   .navigate-left {
     font-size: 14px;
@@ -571,14 +577,14 @@ body {
   .cinturon {
     width: 80px;
     height: 20px;
-    margin:-12px -38px;
+    margin: -12px -38px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .contenedor {
-    max-width:400px;
-    margin:0 auto;
+    max-width: 400px;
+    margin: 0 auto;
   }
   .navigate-left {
     font-size: 16px;
@@ -610,8 +616,8 @@ body {
 }
 @media screen and (max-width: 500px) {
   .contenedor {
-    max-width:350px;
-    margin:0 auto;
+    max-width: 350px;
+    margin: 0 auto;
   }
   .navigate-left {
     font-size: 16px;
