@@ -348,12 +348,6 @@ body {
   border-bottom: 4px solid #5b3893;
   padding-bottom: 5px;
 }
-.projects-clones {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
 .projects-clones h3 {
   font-family: "Comfortaa", serif;
 }
@@ -361,6 +355,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 10px 0 50px 0;
 }
 .project-item {
   align-self: center;
