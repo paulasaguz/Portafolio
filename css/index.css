@@ -1,17 +1,18 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?29jsxl');
-  src:  url('../fonts/icomoon.eot?29jsxl#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?29jsxl') format('truetype'),
-    url('../fonts/icomoon.woff?29jsxl') format('woff'),
-    url('../fonts/icomoon.svg?29jsxl#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?29jsxl");
+  src: url("../fonts/icomoon.eot?29jsxl#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?29jsxl") format("truetype"),
+    url("../fonts/icomoon.woff?29jsxl") format("woff"),
+    url("../fonts/icomoon.svg?29jsxl#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -43,11 +44,11 @@
   content: "\e905";
 }
 body {
-  margin:0;
+  margin: 0;
 }
 .contenedor {
-  max-width:1000px;
-  margin:0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .navigate {
   display: flex;
@@ -59,13 +60,13 @@ body {
 }
 .navigate-left {
   height: 50px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   display: flex;
 }
 .navigate-right {
   display: flex;
   height: 50px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 16px;
   list-style: none;
   justify-content: space-around;
@@ -77,7 +78,7 @@ body {
 .navigate-left a {
   display: flex;
   text-decoration: none;
-  color:inherit;
+  color: inherit;
   align-items: flex-end;
   text-transform: uppercase;
   vertical-align: center;
@@ -89,7 +90,7 @@ body {
 .navigate-right a {
   display: flex;
   text-decoration: none;
-  color:inherit;
+  color: inherit;
   align-items: flex-end;
   text-transform: uppercase;
 }
@@ -100,12 +101,12 @@ body {
   background-size: cover;
   text-align: left;
   padding: 50px 0;
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 .background-info {
   margin-top: 10px;
   max-width: 700px;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, 0.9);
   border: 2px solid #5b3893;
   border-radius: 8px;
   padding: 15px 20px;
@@ -120,8 +121,8 @@ body {
   height: 110px;
 }
 .background h1 {
-  color:black;
-  font-size:40px;
+  color: black;
+  font-size: 40px;
   font-weight: bold;
   margin: 0;
 }
@@ -132,7 +133,7 @@ body {
   margin: 8px;
 }
 .clear {
-  color:#00814B;
+  color: #00814b;
 }
 .acerca-container {
   display: flex;
@@ -140,15 +141,27 @@ body {
   width: 100%;
 }
 .acerca-de-mi {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 .subtitle {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
   padding: 10px 0;
   color: #5b3893;
   border-bottom: 4px solid #5b3893;
+}
+.subtitle-border {
+  border-bottom: 4px solid #5b3893;
+}
+.font-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #5b3893;
+}
+.without-margin {
+  margin: 0;
 }
 .uppercase {
   text-transform: uppercase;
@@ -157,7 +170,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 30px 0;
-  font-family: 'Raleway',sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .cinturon {
   position: absolute;
@@ -165,7 +178,7 @@ body {
   width: 100px;
   height: 30px;
 }
-.numeros-container li{
+.numeros-container li {
   list-style: none;
   line-height: 1.5;
   text-align: center;
@@ -189,7 +202,7 @@ body {
 }
 .title {
   font-size: 30px;
-  font-family: 'Prompt', serif;
+  font-family: "Prompt", serif;
   text-transform: uppercase;
 }
 .about p {
@@ -198,17 +211,19 @@ body {
 }
 .eventos-list {
   display: flex;
-  overflow: auto;
-  padding: 25px 0;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
 }
-.eventos-item img{
-  border-radius: 8px 8px 0 0 ;
+.eventos-item img {
+  border-radius: 8px 8px 0 0;
 }
 .eventos-item {
-  margin-right: 15px;
+  margin: 15px;
   font-family: sans-serif;
   border-radius: 10px;
+  padding: 10px;
+  width: 200px;
   border: 1px solid #c6c1cc;
 }
 .global-title h2 {
@@ -220,29 +235,23 @@ body {
   padding: 20px 0;
   width: 100%;
   height: 300px;
-  font-family: 'Raleway', cursive;
+  font-family: "Raleway", cursive;
   color: white;
 }
 .volunteer-container-es {
   width: 50%;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-    ),
-  url('../images/vitoria-background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/vitoria-background.jpg");
   background-size: cover;
 }
 .volunteer-container-rj {
   width: 50%;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-    ),
-  url('../images/rio-background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/rio-background.jpg");
   background-size: cover;
 }
 .volunteer-vitoria {
@@ -271,23 +280,15 @@ body {
   padding-bottom: 50px;
   cursor: pointer;
 }
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
 .skills {
-  background-color: #3991F6;
+  background-color: #7a6fef;
   position: relative;
 }
-/*.skills:before {
-  content: "";
-  position: absolute;
-  border-bottom:70px solid red;
-  top:0;
-  bottom: 100%;
-  z-index: -1;
-  right: -10px;
-  left:0;
-  transform: rotate(-5deg);
-  overflow: hidden;
-}
-*/
 .skills-container {
   display: flex;
   height: 650px;
@@ -300,7 +301,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: 'Prompt', cursive;
+  font-family: "Prompt", cursive;
 }
 .habilidades-container {
   align-self: center;
@@ -321,21 +322,16 @@ body {
 .cv {
   padding: 50px 0 40px 0;
 }
-.float {
-  float: right;
-  margin-top: -57px;
-}
 .button-cv {
-  background-image:linear-gradient(to right, #5b3893 , #862ab7,#611da5, #5c2fef, #210dba);
-  padding: 10px 15px;
-  color:white;
+  padding: 10px 30px;
+  background-color: #5b3893;
   border: none;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
 }
-.button-cv a{
+.button-cv a {
   color: white;
   text-decoration: none;
 }
@@ -343,8 +339,8 @@ body {
   width: 50%;
 }
 .habilidades h2 {
-  font-size:30px;
-  font-family: 'Prompt', cursive;
+  font-size: 30px;
+  font-family: "Prompt", cursive;
   text-align: center;
   color: white;
 }
@@ -359,7 +355,7 @@ body {
   text-align: center;
 }
 .projects-clones h3 {
-  font-family: 'Comfortaa', serif;
+  font-family: "Comfortaa", serif;
 }
 .projects-list {
   display: flex;
@@ -382,9 +378,9 @@ body {
   display: block;
 }
 .info {
-  background: rgba(30, 29, 29,.9);
+  background: rgba(30, 29, 29, 0.9);
   color: white;
-  font-family: 'Comfortaa', serif;
+  font-family: "Comfortaa", serif;
   text-align: center;
   align-items: center;
   padding: 50px 0;
@@ -418,7 +414,7 @@ body {
 }
 .social-net {
   max-width: 800px;
-  font-family:'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 .social-contact {
   align-items: center;
@@ -428,7 +424,7 @@ body {
   text-align: center;
   font-size: 20px;
 }
-.social-contact h2{
+.social-contact h2 {
   font-size: 30px;
 }
 .redes-fixed {
@@ -437,14 +433,14 @@ body {
   position: fixed;
   right: 0;
   top: 150px;
-  background-color: rgba(49, 2, 124, .9);
+  background-color: rgba(49, 2, 124, 0.9);
   border-radius: 10px 0 0 10px;
 }
 .redes-fixed a {
   text-decoration: none;
   padding: 12px 15px;
   font-size: 25px;
-  color:white;
+  color: white;
 }
 .redes {
   align-items: center;
@@ -458,12 +454,12 @@ body {
   text-align: center;
 }
 .eventos-contenedor h3 {
-  font-family: 'Raleway', serif;
+  font-family: "Raleway", serif;
   margin: 35px 0;
 }
 .sobrepuesto {
   text-align: center;
-  font-family: 'Comfortaa',cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 12px;
   font-weight: bold;
   line-height: 1.8;
@@ -472,7 +468,7 @@ body {
   color: grey;
 }
 .footer {
-  background-color: #0A0037;
+  background-color: #5b3893;
   text-align: center;
   padding: 50px 0;
 }
@@ -480,7 +476,7 @@ body {
   letter-spacing: 2px;
   display: inline-block;
   padding: 10px 15px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 19px;
 }
 .footer-list a {
@@ -492,7 +488,7 @@ body {
   letter-spacing: 2px;
   margin-bottom: 30px;
   color: white;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 21px;
 }
 .footer-list .redes a {
@@ -501,8 +497,8 @@ body {
 
 @media screen and (max-width: 1050px) {
   .contenedor {
-    max-width:800px;
-    margin:0 auto;
+    max-width: 800px;
+    margin: 0 auto;
   }
   .projects-list {
     justify-content: center;
@@ -572,7 +568,7 @@ body {
   }
   .footer-list h3 {
     line-height: 2;
-    font-size:20px;
+    font-size: 20px;
   }
   .cinturon {
     width: 80px;
@@ -600,9 +596,9 @@ body {
     text-decoration: none;
     padding: 10px 10px;
     font-size: 22px;
-    color:white;
+    color: white;
   }
-  .img-profile{
+  .img-profile {
     border-radius: 50%;
     width: 110px;
     height: 110px;
@@ -625,7 +621,7 @@ body {
   .redes-fixed a {
     font-size: 20px;
   }
-  .img-profile{
+  .img-profile {
     border-radius: 50%;
     width: 90px;
     height: 90px;
