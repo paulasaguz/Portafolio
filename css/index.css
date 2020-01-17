@@ -495,6 +495,12 @@ body {
     max-width: 800px;
     margin: 0 auto;
   }
+  .background {
+    height: 30vh;
+  }
+  .background-info {
+    max-width: 650px;
+  }
   .projects-list {
     justify-content: center;
   }
@@ -534,12 +540,18 @@ body {
     max-width: 750px;
     margin: 0 auto;
   }
+  .background-info {
+    max-width: 600px;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .contenedor {
     max-width: 600px;
     margin: 0 auto;
+  }
+  .background-info {
+    max-width: 500px;
   }
   .navigate-left {
     font-size: 14px;
@@ -577,6 +589,9 @@ body {
     max-width: 400px;
     margin: 0 auto;
   }
+  .background-info {
+    max-width: 350px;
+  }
   .navigate-left {
     font-size: 16px;
   }
@@ -595,20 +610,28 @@ body {
   }
   .img-profile {
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
   }
   .info-dev h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .info-dev h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 500px) {
   .contenedor {
     max-width: 350px;
     margin: 0 auto;
+  }
+  .background {
+    height: 40vh;
+  }
+  .background-info {
+    max-width: 300px;
+    display: block;
+    text-align: center;
   }
   .navigate-left {
     font-size: 16px;
@@ -618,11 +641,36 @@ body {
   }
   .img-profile {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
   }
   .info-dev h1 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .info-dev h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contenedor {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .background {
+    height: 50vh;
+  }
+  .background-info {
+    max-width: 200px;
+  }
+  .img-profile {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+  }
+  .info-dev h1 {
+    font-size: 25px;
   }
   .info-dev h3 {
     font-size: 16px;
